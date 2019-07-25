@@ -1,6 +1,6 @@
 {% set name = "robotframework-lint" %}
-{% set version = "0.9" %}
-{% set sha256 = "a71c54f342af0a988243c34cb887895e1256a9a45050692c33e0306f5420bf6c" %}
+{% set version = "1.0" %}
+{% set sha256 = "55c26e76f9b11ed54446252b1df71ed993497b36b971ce9bc52d3b86f6501b4d" %}
 
 package:
   name: {{ name }}
