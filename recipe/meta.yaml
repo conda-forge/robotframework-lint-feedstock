@@ -1,6 +1,6 @@
 {% set name = "robotframework-lint" %}
-{% set version = "1.0" %}
-{% set sha256 = "55c26e76f9b11ed54446252b1df71ed993497b36b971ce9bc52d3b86f6501b4d" %}
+{% set version = "1.1" %}
+{% set sha256 = "2b5ac22ed59acbdf65f340ef3ddf10c7e88c9efd37cb03d7470d7c8e869cc0c1" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - rflint = rflint.__main__:main
 
@@ -36,7 +36,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Linter for robot framework plain text files'
+  summary: Linter for robot framework plain text files
 
 extra:
   recipe-maintainers:
